@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2680d82bae10f448571fe31e1def58, type: 3}
+  m_Name: FarmerQuest
+  m_EditorClassIdentifier: 
+  ID: 0
+  Questions:
+  - {fileID: 462279804819349068, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
+  - {fileID: 4498458935187471530, guid: 9790636de54950548b31922b31682eb3, type: 3}
+  - {fileID: 406607824769409369, guid: 959f1f295393881479e8be13c2535645, type: 3}
+  - {fileID: 406607824769409369, guid: 1405b57a21e023443ba0283a5f2f1a09, type: 3}
+  - {fileID: 406607824769409369, guid: 5ac3bbb1fecf44247a841d7770224dc9, type: 3}
+  - {fileID: 406607824769409369, guid: a96f18855234fc34db8d50db7e8e9388, type: 3}
+  - {fileID: 406607824769409369, guid: 157567f00fbeb0c41931f51d578ae1e0, type: 3}
+  - {fileID: 0}

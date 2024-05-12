@@ -54,7 +54,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4498458935187471530, guid: 9790636de54950548b31922b31682eb3, type: 3}
       propertyPath: answer
-      value: "\u041E\u0447\u0435\u043D\u044C \u0442\u0430\u043A \u0441\u0435\u0431\u0435"
+      value: "\u0412 \u043F\u0435\u0440\u0432\u0443\u044E \u043E\u0447\u0435\u0440\u0435\u0434\u044C
+        \u043D\u0443\u0436\u043D\u043E \u0441\u043E\u0431\u0440\u0430\u0442\u044C
+        \u043A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C - \u0441\u044B\u043D
+        \u043F\u043E\u0432\u0435\u0437\u0435\u0442 \u0435\u0433\u043E \u043D\u0430
+        \u044F\u0440\u043C\u0430\u0440\u043A\u0443. \u0415\u0449\u0435 \u043D\u0443\u0436\u043D\u043E
+        \u0441\u043E\u0431\u0440\u0430\u0442\u044C \u0442\u043E\u043C\u0430\u0442\u044B,
+        \u0442\u044B\u043A\u0432\u044B, \u043A\u0443\u043A\u0443\u0440\u0443\u0437\u0443
+        \u0438 \u0441\u0430\u0444\u043B\u043E\u0440."
       objectReference: {fileID: 0}
     - target: {fileID: 4498458935187471530, guid: 9790636de54950548b31922b31682eb3, type: 3}
       propertyPath: result
@@ -62,16 +69,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4498458935187471530, guid: 9790636de54950548b31922b31682eb3, type: 3}
       propertyPath: content
-      value: "\u041F\u043E\u0433\u043E\u0434\u0430 \u043D\u044B\u043D\u0447\u0435
-        \u0445\u043E\u0440\u043E\u0448\u0430\u044F?"
+      value: "\u041A\u0430\u043A\u0438\u0435 \u043A\u0443\u043B\u044C\u0442\u0443\u0440\u044B
+        \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0441\u043E\u0431\u0440\u0430\u0442\u044C?"
       objectReference: {fileID: 0}
     - target: {fileID: 4498458935187471530, guid: 9790636de54950548b31922b31682eb3, type: 3}
       propertyPath: brifPoint
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4498458935187471530, guid: 9790636de54950548b31922b31682eb3, type: 3}
       propertyPath: questionStatus
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4498458935187471530, guid: 9790636de54950548b31922b31682eb3, type: 3}
       propertyPath: brifPointContent

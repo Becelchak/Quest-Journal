@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/QuestTable.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Quest 1.unity
+    guid: 4495028074ba5e6458c86f8d5de01629
+  - enabled: 1
+    path: Assets/Scenes/Quest 2.unity
+    guid: fc901cbad5b0bb842bf41d0df708750b
   m_configObjects: {}

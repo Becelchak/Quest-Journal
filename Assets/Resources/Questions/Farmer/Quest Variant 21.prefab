@@ -10,11 +10,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 462279804819349068, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: ID
-      value: 0
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 462279804819349068, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: answer
-      value: "\u041F\u043E\u0439\u0442\u0438 \u0432 \u0434\u0435\u0440\u0435\u0432\u043D\u044E"
+      value: "\u0412 \u0438\u0434\u0435\u0430\u043B\u0435 \u0443\u0441\u043F\u0435\u0442\u044C
+        \u0441\u043E\u0431\u0440\u0430\u0442\u044C \u0432\u0441\u0435. \u042D\u0442\u043E:
+        \u043E\u043A\u043E\u043B\u043E 100-120 \u0432\u0435\u0434\u0435\u0440 \u043A\u0430\u0440\u0442\u043E\u0448\u043A\u0438,
+        90-100 \u044F\u0449\u0438\u043A\u043E\u0432 \u043A\u0443\u043A\u0443\u0440\u0443\u0437\u044B,
+        70-80 \u044F\u0449\u0438\u043A\u043E\u0432 \u0442\u043E\u043C\u0430\u0442\u043E\u0432,
+        30-40 \u043C\u0435\u0448\u043A\u043E\u0432 \u0441\u0430\u0444\u043B\u043E\u0440\u0430
+        \u0438 \u0433\u0434\u0435-\u0442\u043E 120 \u0442\u044B\u043A\u0432."
       objectReference: {fileID: 0}
     - target: {fileID: 462279804819349068, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: result
@@ -22,8 +28,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462279804819349068, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: content
-      value: "\u0427\u0442\u043E \u043D\u0430\u043C \u043D\u0443\u0436\u043D\u043E
-        \u0441\u0434\u0435\u043B\u0430\u0442\u044C?"
+      value: "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u043D\u0443\u0436\u043D\u043E
+        \u0441\u043E\u0431\u0440\u0430\u0442\u044C \u0443\u0440\u043E\u0436\u0430\u044F?"
       objectReference: {fileID: 0}
     - target: {fileID: 462279804819349068, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: questionStatus
@@ -31,8 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462279804819349068, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: brifPointContent
-      value: "\u0414\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F \u0434\u043E
-        \u0434\u0435\u0440\u0435\u0432\u043D\u0438"
+      value: "\u041A\u0430\u0440\u0442\u043E\u0444\u0435\u043B\u044C"
       objectReference: {fileID: 0}
     - target: {fileID: 2480901370476110032, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -76,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8368678200772950699, guid: 8b0e50eeee024b7499fb90b8eeb76f6e, type: 3}
       propertyPath: m_Name
-      value: Quest Variant
+      value: Quest Variant 21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Questions system/ Quest")]
-public class Quest : MonoBehaviour
+public class Quest : ScriptableObject
 {
     public int ID;
     public string content;

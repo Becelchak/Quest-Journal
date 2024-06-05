@@ -59,7 +59,12 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
             newCell.transform.GetChild(1).GetComponent<Text>().text = answer.text;
             newCell.transform.localScale = new Vector3(1f, 1f, 1f);
 
-            transform.parent = primalParent;
+            
+            image.color = new Color(255f, 255f, 255f, 1f);
+            image.raycastTarget = true;
+            transform.SetParent(primalParent);
+
+            rectTransform.localScale = new Vector3(1f, 1f, 1f);
         }
         else
         {
@@ -77,11 +82,11 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         parentAfterDrag = newContainer;
     }
 
-    public void DeleteFromOldContainer()
-    {
-        //interviewManager.RemoveQuestFromList(int.Parse(gameObject.name.Split('l')[2]));
-        brifManager.ChangeList();
-    }
+    //public void DeleteFromOldContainer()
+    //{
+    //    interviewManager.RemoveQuestFromList(int.Parse(gameObject.name.Split('l')[2]));
+    //    brifManager.ChangeList();
+    //}
 
     public Quest GiveQuestInfo()
     {

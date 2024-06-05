@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _questions:
   - {fileID: 11400000, guid: b0869ccaf5983fd48b4b6b883753fb9a, type: 2}
+  nowQuests:
+  - {fileID: 11400000, guid: 3bb7649c298799d44a388ca95ff7ece1, type: 2}

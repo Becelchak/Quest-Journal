@@ -14,8 +14,18 @@ public class Quest : ScriptableObject
     public bool isHaveSpecialList;
     public string specialListContent;
     public Dictionary<string, int> tags;
-}
+    private bool isUsedInBrif;
 
+    public void SetUsed()
+    {
+        isUsedInBrif = true;
+    }
+
+    public bool GetUseStatus()
+    {
+        return isUsedInBrif;
+    }
+}
 
 public enum Status
 {

@@ -7,10 +7,11 @@ using UnityEngine;
 
 public class Database : ScriptableObject
 {
-    [SerializeField] List<TableQuestions> _questions;
+    [SerializeField] List<TableQuestions> _questions = new List<TableQuestions>();
     private List<NpcMain> NpcNamed;
     private Dictionary<string,NpcMain> NpcNames;
-    private List<Quest> nowQuests;
+    [SerializeField]
+    private List<Quest> nowQuests = new List<Quest>();
 
     //[ContextMenu("Set ID")]
     //public void SetID()
@@ -21,14 +22,29 @@ public class Database : ScriptableObject
 
     //    NpcNames.Add("NpcNamed",new FarmerSon());
     //}
+    public void ClearNowQuestList()
+    {
+        nowQuests.Clear();
+    }
 
     public void AddNowQuest(Quest quest)
     {
-        nowQuests.Add(quest);
+        if(!nowQuests.Contains(quest))
+            nowQuests.Add(quest);
     }
 
     public void RemoveNowQuest(Quest quest)
     {
         nowQuests.Remove(quest);
+    }
+
+    public TableQuestions GetTableQuestions(int number)
+    {
+        return _questions[number];
+    }
+
+    public List<Quest> GetNowQuest()
+    {
+        return nowQuests;
     }
 }

@@ -19,7 +19,7 @@ public class InterviewManager : MonoBehaviour
     [SerializeField]
     private GameObject countMainQuestions;
     // Лист вопросов в данный момент вписанных в Main контейнер
-    public List<Quest> nowQuests;
+    public List<Quest> nowQuestsInterview;
     void Start()
     {
         // Проводим заполнение списка заготовленными ячейками, чтобы хватило место под все вопросы в рамках квеста
@@ -67,7 +67,7 @@ public class InterviewManager : MonoBehaviour
         countMainQuestions.GetComponent<Text>().text = $"{count}/5";
 
         var id = int.Parse(cell.name.Split('l')[2].Split('(')[0]);
-        nowQuests.Add(questions.GetQuest(id));
+        nowQuestsInterview.Add(questions.GetQuest(id));
 
     }
 
@@ -81,8 +81,8 @@ public class InterviewManager : MonoBehaviour
         cellInAllList.GetComponent<Button>().interactable = true;
 
         var id = int.Parse(cell.name.Split('l')[2].Split('(')[0]);
-        //GetComponent<BrifManager>().CleanContainer(nowQuests.IndexOf(questions.GetQuest(id)));
-        nowQuests.Remove(questions.GetQuest(id));
+        GetComponent<BrifManager>().CleanContainer(nowQuestsInterview.IndexOf(questions.GetQuest(id)));
+        nowQuestsInterview.Remove(questions.GetQuest(id));
         Destroy(cell.gameObject);
         questionsMainContainer.Remove(question.transform);
 
@@ -110,11 +110,19 @@ public class InterviewManager : MonoBehaviour
     public Quest GiveQuestFromList(string questNumber)
     {
         Quest quest = null;
-        foreach (var question in nowQuests) 
+        foreach (var question in nowQuestsInterview) 
         {
             if(question.name.Contains(questNumber))
                 quest = question;
         }
         return quest;
+    }
+
+    public void SetClampMainQuestions()
+    {
+        foreach (var item in questionsMainContainer)
+        {
+            item.GetChild(1).gameObject.SetActive(false);
+        }
     }
 }

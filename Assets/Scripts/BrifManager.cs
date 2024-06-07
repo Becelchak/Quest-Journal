@@ -22,6 +22,7 @@ public class BrifManager : MonoBehaviour
     // Определяет пороговое значение правильных вопросов для прохождения на следующий этап
     [SerializeField]
     private double percentCorrectQuestionsExample = 50;
+    public List<string> hints = new List<string>();
 
     void Start()
     {
@@ -81,6 +82,23 @@ public class BrifManager : MonoBehaviour
 
             question.GetComponent<Text>().text = questionItem.content;
             answer.GetComponent<Text>().text = questionItem.answer;
+
+            if(questionItem.hint != "" && !hints.Contains(questionItem.hint))
+                hints.Add(questionItem.hint);
+        }
+        var hintList = GameObject.Find("HintList");
+        var noteExample = hintList.transform.GetChild(0);
+        var container = hintList.transform.GetChild(1);
+
+        foreach (var hint in hints)
+        {
+            var note = Instantiate(noteExample);
+            note.transform.SetParent(container);
+            note.gameObject.SetActive(true);
+            note.transform.localScale = Vector3.one;
+
+            note.GetComponentInChildren<Text>().text = hint;
+            
         }
     }
 
@@ -132,11 +150,6 @@ public class BrifManager : MonoBehaviour
             GetComponent<Slot>().GetApplyQuestList();
         var index = cell.transform.GetSiblingIndex();
         database.AddNowQuest(tempList[index]);
-        //foreach ( var quest in tempList )
-        //{
-        //    database.AddNowQuest(quest);
-        //}
-
     }
 
     public void DeleteBrifText(GameObject cell) 

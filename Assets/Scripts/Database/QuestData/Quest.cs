@@ -1,3 +1,4 @@
+using AYellowpaper.SerializedCollections;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,8 +14,9 @@ public class Quest : ScriptableObject
     public string brifPointContent;
     public bool isHaveSpecialList;
     public string specialListContent;
-    public Dictionary<string, int> tags;
+    public SerializedDictionary<string, int> tags;
     private bool isUsedInBrif;
+    public string hint;
 
     public void SetUsed()
     {

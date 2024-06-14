@@ -9,14 +9,24 @@ public class Music : MonoBehaviour
     private List<AudioClip> playList = new List<AudioClip>();
     private AudioListener listener;
     private AudioSource audioSource;
+    private bool isAudioOn = true;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        if (!isAudioOn)
+            audioSource.enabled = false;
     }
 
     void Update()
     {
+        if (!isAudioOn)
+            audioSource.volume = 0;
+        else
+        {
+            audioSource.volume = 0.10f;
+        }
+
         if (!audioSource.isPlaying)
         {
             var rnd = Random.Range(0,playList.Count);
@@ -24,5 +34,9 @@ public class Music : MonoBehaviour
             audioSource.clip = audio;
             audioSource.Play();
         }
+    }
+    public void SwitchAudio()
+    {
+        isAudioOn = !isAudioOn;
     }
 }

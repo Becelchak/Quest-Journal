@@ -21,7 +21,6 @@ public class Slot : MonoBehaviour, IDropHandler
 
     private BrifPoint point;
     private DragAndDrop dragAndDrop;
-    //private DragAndDrop prevDragAndDrop;
     private List<DragAndDrop> listAllQuestionCell = new List<DragAndDrop>();
     private List<Quest> allQuestInfoInSlot = new List<Quest>();
     public void OnDrop(PointerEventData eventData)
@@ -38,7 +37,6 @@ public class Slot : MonoBehaviour, IDropHandler
             if (cell != null && !isClosed)
             {
                 cell.SetNewContainerParent(transform.GetChild(0).transform);
-                //cell.DeleteFromOldContainer();
 
                 point = cell.GiveQuestInfo().brifPoint;
                 cell.GetComponent<Collider2D>().enabled = false;
@@ -52,7 +50,6 @@ public class Slot : MonoBehaviour, IDropHandler
     {
         dragAndDrop = collision.GetComponent<DragAndDrop>();
         listAllQuestionCell.Add(dragAndDrop);
-        //prevDragAndDrop = collision.GetComponent<DragAndDrop>();
     }
 
     public void OnTriggerExit2D(Collider2D collision)

@@ -1,3 +1,4 @@
+using UI.Tables;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
